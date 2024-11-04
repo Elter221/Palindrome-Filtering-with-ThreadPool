@@ -23,7 +23,7 @@ public class SelectorTests
     public void GetPalindromes_ReturnNewArray(IList<int> array, IList<int> expected)
     {
         var actual = GetPalindromes(array);
-        Assert.That(expected, Is.EquivalentTo(actual));
+        Assert.That(actual, Is.EquivalentTo(expected));
     }
 
     [Test]
@@ -46,6 +46,6 @@ public class SelectorTests
 
         IList<int> expected = Enumerable.Repeat(palindromic, count).ToList();
         var actual = GetPalindromes(source);
-        Assert.That(expected, Is.EquivalentTo(actual));
+        Assert.That(actual, Is.EquivalentTo(expected));
     }
 }
