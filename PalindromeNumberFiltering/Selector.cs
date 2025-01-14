@@ -30,7 +30,7 @@ namespace PalindromeNumberFiltering
                             palindromes.Add(number);
                         }
 
-                        _ = countdown.Signal();
+                        countdown.Signal();
                     });
                 }
 
